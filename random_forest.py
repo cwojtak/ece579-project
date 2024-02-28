@@ -1,7 +1,8 @@
-# Using reference https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
+# Using reference
+# https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles
 
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn import svm
+from sklearn.ensemble import RandomForestClassifier
 
 import numpy as np
 
@@ -12,9 +13,9 @@ texts, labels, eval_texts, eval_labels = get_datasets()
 count_vectorizer = CountVectorizer()
 vectorized_samples = count_vectorizer.fit_transform(texts)
 
-support = svm.SVC()
-support.fit(vectorized_samples, labels)
-pred = np.array(support.predict(count_vectorizer.transform(eval_texts)))
+random_forest = RandomForestClassifier(n_estimators=100)
+random_forest.fit(vectorized_samples, labels)
+pred = np.array(random_forest.predict(count_vectorizer.transform(eval_texts)))
 ground_truth = np.array(eval_labels)
 
 tp = np.sum(np.logical_and(pred, ground_truth))
