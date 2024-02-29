@@ -1,32 +1,36 @@
 # Using reference https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
 
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn import svm
+from joblib import dump
 
-import numpy as np
+import pandas as pd
 
-from data import get_datasets
+import os
 
-texts, labels, eval_texts, eval_labels = get_datasets()
+def load_training_data():
+    """Load the training data from the split directory."""
+    train_dir = "data/split/train/"
+    X_train = pd.read_csv(train_dir + "X_train.csv")
+    y_train = pd.read_csv(train_dir + "y_train.csv").squeeze()
+    return X_train, y_train
 
-count_vectorizer = CountVectorizer()
-vectorized_samples = count_vectorizer.fit_transform(texts)
+def train_SVM(X_train, y_train):
+    """Train a logistic regression model (the baseline) using the provided training data."""
+    model = svm.SVC(probability=True, verbose=1)
+    model.fit(X_train, y_train)
+    return model
 
-support = svm.SVC()
-support.fit(vectorized_samples, labels)
-pred = np.array(support.predict(count_vectorizer.transform(eval_texts)))
-ground_truth = np.array(eval_labels)
+def save_model(model, model_path):
+    """Save the trained model to the specified path using joblib."""
+    os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    dump(model, model_path)
 
-tp = np.sum(np.logical_and(pred, ground_truth))
-tn = np.sum(np.logical_and(np.logical_not(pred), np.logical_not(ground_truth)))
-fp = np.sum(pred) - tp
-fn = np.sum(np.logical_not(pred)) - tn
+if __name__ == "__main__":
+    # Load the training data
+    X_train, y_train = load_training_data()
 
-precision = tp / (tp + fp)
-recall = tp / (tp + fn)
+    # Train the logistic regression model
+    model = train_SVM(X_train, y_train)
 
-print("Number Correct: %5d/%5d" % (tp + tn, len(ground_truth)))
-print("Recall: %2.5f" % recall)
-print("Precision: %2.5f" % precision)
-print("F1 Score: %2.5f" % (2 * (precision * recall) / (precision + recall)))
-print("Specificity: %2.5f" % (tn / (tn + fp)))
+    # Save the trained model
+    save_model(model, "saved_models/SVM.joblib")

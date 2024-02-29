@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report
 from joblib import dump
 import os
 
@@ -14,7 +13,7 @@ def load_training_data():
 
 def train_logistic_regression(X_train, y_train):
     """Train a logistic regression model (the baseline) using the provided training data."""
-    model = LogisticRegression(max_iter=1000)
+    model = LogisticRegression(max_iter=1000, verbose=1)
     model.fit(X_train, y_train)
     return model
 
