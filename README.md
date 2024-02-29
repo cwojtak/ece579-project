@@ -1,6 +1,8 @@
 Flow of operations for running an experiment:
 
-*NOTE: All example commands should be executed from the root project directory (i.e. /ece579-project)
+*NOTE: All example commands should be executed from the root project directory (i.e. /ece579-project)  
+*NOTE: Some pre-made configurations are available in ./bin. Running any of the *_default_run.sh scripts in this folder
+will automatically execute steps 1-4 below but will not clean up like in step 6.
 
 1. Data preprocessing
     - Create/Use a preprocessing script from 'src/data'. This may include processes like tokenization, vectorization, text normalization, etc.

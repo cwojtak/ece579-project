@@ -1,14 +1,16 @@
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from load_data import load_and_label_data
-import os 
+import os
+
 
 def vectorize_messages(messages):
-    """Vectorizes the messages using a binary bag-of-words approach"""
-    vectorizer = CountVectorizer(binary=True)
+    """Vectorizes the messages using a count bag-of-words approach"""
+    vectorizer = CountVectorizer(stop_words='english')
     features = vectorizer.fit_transform(messages)
-    
+
     return pd.DataFrame(features.toarray(), columns=vectorizer.get_feature_names_out())
+
 
 if __name__ == "__main__":
     print("Current working directory:", os.getcwd())
