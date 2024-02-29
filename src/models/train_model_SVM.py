@@ -15,7 +15,7 @@ def load_training_data():
     return X_train, y_train
 
 def train_SVM(X_train, y_train):
-    """Train a logistic regression model (the baseline) using the provided training data."""
+    """Train an SVM model using the provided training data."""
     model = svm.SVC(probability=True, verbose=1)
     model.fit(X_train, y_train)
     return model

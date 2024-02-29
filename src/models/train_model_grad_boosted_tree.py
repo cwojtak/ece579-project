@@ -1,7 +1,6 @@
-# Using reference
-# https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles
+# Using reference https://scikit-learn.org/stable/modules/tree.html
 
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 from joblib import dump
 
 import pandas as pd
@@ -15,9 +14,9 @@ def load_training_data():
     y_train = pd.read_csv(train_dir + "y_train.csv").squeeze()
     return X_train, y_train
 
-def train_random_forest(X_train, y_train):
-    """Train a random forest model using the provided training data."""
-    model = RandomForestClassifier(n_estimators=100, verbose=1)
+def train_grad_boosted_tree(X_train, y_train):
+    """Train a decision tree using the provided training data."""
+    model = GradientBoostingClassifier(verbose=1)
     model.fit(X_train, y_train)
     return model
 
@@ -31,7 +30,7 @@ if __name__ == "__main__":
     X_train, y_train = load_training_data()
 
     # Train the logistic regression model
-    model = train_random_forest(X_train, y_train)
+    model = train_grad_boosted_tree(X_train, y_train)
 
     # Save the trained model
-    save_model(model, "saved_models/random_forest.joblib")
+    save_model(model, "saved_models/grad_boosted_tree.joblib")
