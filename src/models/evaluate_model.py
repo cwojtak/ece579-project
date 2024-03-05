@@ -16,7 +16,7 @@ def load_model(path):
 
 
 def load_test_data():
-    """Load testing data from ath."""
+    """Load testing data from path."""
     try:
         X_test = pd.read_csv("data/split/test/X_test.csv")
         y_test = pd.read_csv("data/split/test/y_test.csv").squeeze()

@@ -4,7 +4,7 @@ from load_data import load_and_label_data
 import os 
 
 def vectorize_messages(messages):
-    """Vectorizes the messages using a binary bag-of-words model"""
+    """Vectorizes the messages using a binary bag-of-words approach"""
     vectorizer = CountVectorizer(binary=True)
     features = vectorizer.fit_transform(messages)
     
