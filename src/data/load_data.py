@@ -14,4 +14,5 @@ def load_and_label_data(file_path):
                 data.append([label, message])
             except ValueError:
                 continue
+    print("Mapped labels: spam->1, ham->0.")
     return pd.DataFrame(data, columns=['label', 'message'])

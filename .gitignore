@@ -1,6 +1,0 @@
-.venv/
-.idea/
-__pycache__/
-data/processed/
-data/split/train/
-data/split/test/

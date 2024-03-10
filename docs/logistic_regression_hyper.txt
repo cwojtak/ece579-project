@@ -1,0 +1,30 @@
+Mapped labels: spam->1, ham->0.
+Vectorized data with binary BoW.
+
+Split data.
+
+Best parameters found: {'C': 10, 'class_weight': 'balanced', 'fit_intercept': True, 'penalty': 'l2', 'solver': 'liblinear'}
+
+Model performance: TRAIN
+----------------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+AUROC: 1.0000
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9863
+Precision: 0.9902
+Recall: 0.9062
+F1-score: 0.9464
+AUROC: 0.9917
+
+Saved model: logistic_regression_hyper_search.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+
