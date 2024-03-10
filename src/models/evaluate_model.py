@@ -20,13 +20,12 @@ def load_test_data():
     try:
         X_test = pd.read_csv("data/split/test/X_test.csv")
         y_test = pd.read_csv("data/split/test/y_test.csv").squeeze()
-        print(f"Loaded test data")
         return X_test, y_test
     except Exception as e:
         print(f"Error loading test data: {e}")
         sys.exit(1)
 
-def evaluate(model, X_test, y_test):
+def evaluate(model, X_test, y_test, traintest="TEST"):
     """Evaluate the model using accuracy, precision, recall, f1-score, and AUROC."""
     predictions = model.predict(X_test)
     
@@ -38,13 +37,13 @@ def evaluate(model, X_test, y_test):
     probabilities = model.predict_proba(X_test)[:,1]
     auroc = roc_auc_score(y_test, probabilities)
 
-    print("\nModel performance")
+    print(f"Model performance: {traintest}")
     print("----------------------")
     print(f"Accuracy: {accuracy:.4f}")
     print(f"Precision: {precision:.4f}")
     print(f"Recall: {recall:.4f}")
     print(f"F1-score: {f1:.4f}")
-    print(f"AUROC: {auroc:.4f}")
+    print(f"AUROC: {auroc:.4f}\n")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

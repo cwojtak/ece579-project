@@ -1,0 +1,28 @@
+Mapped labels: spam->1, ham->0.
+Vectorized data with binary BoW.
+
+Split data.
+
+Model performance: TRAIN
+----------------------
+Accuracy: 0.9977
+Precision: 1.0000
+Recall: 0.9828
+F1-score: 0.9913
+AUROC: 0.9997
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9833
+Precision: 0.9949
+Recall: 0.8795
+F1-score: 0.9336
+AUROC: 0.9930
+
+Saved model: logistic_regression_baseline.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

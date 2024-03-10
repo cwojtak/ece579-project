@@ -2,9 +2,8 @@
 
 from sklearn.naive_bayes import GaussianNB
 from joblib import dump
-
 import pandas as pd
-
+import evaluate_model
 import os
 
 def load_training_data():
@@ -32,5 +31,13 @@ if __name__ == "__main__":
     # Train the logistic regression model
     model = train_naive_bayes(X_train, y_train)
 
+    # Evaluate the model on training data
+    evaluate_model.evaluate(model, X_train, y_train, "TRAIN")
+
+    # Evaluate the model on testing data
+    X_test, y_test = evaluate_model.load_test_data()
+    evaluate_model.evaluate(model, X_test, y_test, "TEST")
+
     # Save the trained model
     save_model(model, "saved_models/naive_bayes.joblib")
+    print("Saved model: saved_models/naive_bayes.joblib")

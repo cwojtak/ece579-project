@@ -1,6 +1,21 @@
+# Python virtual environments
+.env
+.venv
+env/
+venv/
+.env/
 .venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VSCode
+.vscode/
+*.code-workspace
+__pycache__
+
+# Other
 .idea/
-__pycache__/
 data/processed/
 data/split/train/
 data/split/test/

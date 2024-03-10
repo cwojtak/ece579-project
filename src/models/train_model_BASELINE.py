@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from joblib import dump
 import os
+import evaluate_model
 
 def load_training_data():
     """Load the training data from the split directory."""
@@ -13,7 +14,7 @@ def load_training_data():
 
 def train_logistic_regression(X_train, y_train):
     """Train a logistic regression model (the baseline) using the provided training data."""
-    model = LogisticRegression(max_iter=1000, verbose=1)
+    model = LogisticRegression(max_iter=1000)
     model.fit(X_train, y_train)
     return model
 
@@ -29,5 +30,13 @@ if __name__ == "__main__":
     # Train the logistic regression model
     model = train_logistic_regression(X_train, y_train)
 
+    # Evaluate the model on training data
+    evaluate_model.evaluate(model, X_train, y_train, "TRAIN")
+
+    # Evaluate the model on testing data
+    X_test, y_test = evaluate_model.load_test_data()
+    evaluate_model.evaluate(model, X_test, y_test, "TEST")
+
     # Save the trained model
     save_model(model, "saved_models/logistic_regression_baseline.joblib")
+    print("Saved model: logistic_regression_baseline.joblib")

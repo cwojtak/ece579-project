@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV
 import os
 import sys
 
@@ -17,13 +18,14 @@ def split_save():
     
 
     # Stratified split to maintain class imbalance
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42, stratify=y)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
 
     # Save split data
     X_train.to_csv("data/split/train/" + "X_train.csv", index=False)
     y_train.to_csv("data/split/train/" + "y_train.csv", index=False)
     X_test.to_csv("data/split/test/" + "X_test.csv", index=False)
     y_test.to_csv("data/split/test/" + "y_test.csv", index=False)
+    print("Split data.")
     
 
 if __name__ == "__main__":
