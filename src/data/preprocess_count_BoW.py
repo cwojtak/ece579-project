@@ -9,7 +9,7 @@ def vectorize_messages(messages):
     vectorizer = CountVectorizer(stop_words='english')
     features = vectorizer.fit_transform(messages)
     print("Removed stopwords: english.")
-    print("Vectorized data with binary BoW.")
+    print("Vectorized data with count BoW.")
     return pd.DataFrame(features.toarray(), columns=vectorizer.get_feature_names_out())
 
 

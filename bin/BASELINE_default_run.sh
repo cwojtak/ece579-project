@@ -47,7 +47,7 @@ run_command "python3 src/utils/split.py"
 
 fi
 
-# Train a model. NOTE: This also evaluates on training and tessting data.
+# Train a model. NOTE: This also evaluates on training and testing data.
 run_command "python3 src/models/train_model_BASELINE.py"
 
 # Cleanup workspace

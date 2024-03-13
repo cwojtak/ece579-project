@@ -1,6 +1,7 @@
 # Using reference https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
 
 from sklearn import svm
+from sklearn.model_selection import StratifiedKFold, RandomizedSearchCV
 from joblib import dump
 import evaluate_model
 import pandas as pd
@@ -15,9 +16,28 @@ def load_training_data():
 
 def train_SVM(X_train, y_train):
     """Train an SVM model using the provided training data."""
-    model = svm.SVC(probability=True, verbose=1)
-    model.fit(X_train, y_train)
-    return model
+    # Hyperparameter Search Space
+    param_grid = {
+        'C': [0.001, 0.01, 0.1, 1, 10, 100],
+        'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
+        'degree': [2, 3, 4, 5]
+    }
+
+    # Initialize the SVM
+    # Grid search found C=1, degree=3, kernel='linear' was best
+    model = svm.SVC(C=1, degree=3, kernel='linear', probability=True, verbose=1)
+
+    # Using stratified K fold sampling to address class imbalances as base SVM had low recall
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+
+    # Performing a randomized grid hyperparameter search because grid search takes a long time
+    print("Performing a randomized grid hyperparameter search with Stratified K-Fold cross validation")
+
+    rand_search = RandomizedSearchCV(estimator=model, n_iter=20, param_distributions=param_grid, cv=skf, n_jobs=-1)
+    rand_search.fit(X_train, y_train)
+    print(f"Best parameters found: {rand_search.best_params_}\n")
+
+    return rand_search.best_estimator_
 
 def save_model(model, model_path):
     """Save the trained model to the specified path using joblib."""
