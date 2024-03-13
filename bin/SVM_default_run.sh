@@ -40,7 +40,7 @@ if [ ! -f data/split/test/X_test.csv ] ||
    [ ! -f data/split/train/y_train.csv ]; then
 
 # Data preprocessing
-run_command "python3 src/data/preprocess_binary_BoW.py"
+run_command "python3 src/data/preprocess_tfidf.py"
 
 # Data splitting
 run_command "python3 src/utils/split.py"

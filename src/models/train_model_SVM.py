@@ -20,11 +20,11 @@ def train_SVM(X_train, y_train):
     param_grid = {
         'C': [0.001, 0.01, 0.1, 1, 10, 100],
         'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
-        'degree': [2, 3, 4, 5]
+        'degree': [2, 3]
     }
 
     # Initialize the SVM
-    # Grid search found C=1, degree=3, kernel='linear' was best
+    # Grid search on base SVM found C=1, degree=3, kernel='linear' was best
     model = svm.SVC(C=1, degree=3, kernel='linear', probability=True, verbose=1)
 
     # Using stratified K fold sampling to address class imbalances as base SVM had low recall
@@ -33,7 +33,7 @@ def train_SVM(X_train, y_train):
     # Performing a randomized grid hyperparameter search because grid search takes a long time
     print("Performing a randomized grid hyperparameter search with Stratified K-Fold cross validation")
 
-    rand_search = RandomizedSearchCV(estimator=model, n_iter=20, param_distributions=param_grid, cv=skf, n_jobs=-1)
+    rand_search = RandomizedSearchCV(estimator=model, n_iter=10, param_distributions=param_grid, cv=skf, n_jobs=-1)
     rand_search.fit(X_train, y_train)
     print(f"Best parameters found: {rand_search.best_params_}\n")
 

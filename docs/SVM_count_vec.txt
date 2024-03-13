@@ -1,0 +1,212 @@
+Mapped labels: spam->1, ham->0.
+Removed stopwords: english.
+Vectorized data with count BoW.
+
+Split data.
+
+Performing a randomized grid hyperparameter search with Stratified K-Fold cross validation
+*.*
+optimization finished, #iter = 1422
+obj = -21.338428, rho = 1.111290
+nSV = 452, nBSV = 5
+Total nSV = 452
+.*
+optimization finished, #iter = 1450
+obj = -20.599897, rho = 1.073004
+nSV = 468, nBSV = 4
+Total nSV = 468
+..*
+optimization finished, #iter = 1532
+obj = -21.468803, rho = 1.072209
+nSV = 489, nBSV = 4
+Total nSV = 489
+*
+optimization finished, #iter = 1552
+obj = -21.733853, rho = 1.123208
+nSV = 460, nBSV = 3
+Total nSV = 460
+.*
+optimization finished, #iter = 1636
+obj = -24.125419, rho = 1.074162
+nSV = 517, nBSV = 4
+Total nSV = 517
+.*
+optimization finished, #iter = 1558
+obj = -20.540924, rho = 1.105317
+nSV = 475, nBSV = 5
+Total nSV = 475
+..*
+optimization finished, #iter = 1695
+obj = -18.706387, rho = 1.116054
+nSV = 492, nBSV = 2
+Total nSV = 492
+.*
+optimization finished, #iter = 1518
+obj = -20.584356, rho = 1.083920
+nSV = 475, nBSV = 2
+Total nSV = 475
+*
+optimization finished, #iter = 1438
+obj = -21.261212, rho = 1.122266
+nSV = 468, nBSV = 3
+Total nSV = 468
+.*
+optimization finished, #iter = 1612
+obj = -21.662311, rho = 1.051277
+nSV = 509, nBSV = 5
+Total nSV = 509
+.*
+optimization finished, #iter = 1581
+obj = -20.914742, rho = 1.089234
+nSV = 481, nBSV = 3
+Total nSV = 481
+*.*
+optimization finished, #iter = 1354
+obj = -16.682413, rho = 1.137751
+nSV = 419, nBSV = 2
+Total nSV = 419
+*.*
+optimization finished, #iter = 1317
+obj = -19.434797, rho = 1.098798
+nSV = 440, nBSV = 2
+Total nSV = 440
+.*
+optimization finished, #iter = 1748
+obj = -21.617812, rho = 1.045617
+nSV = 526, nBSV = 4
+Total nSV = 526
+*.*
+optimization finished, #iter = 1519
+obj = -22.506751, rho = 1.104957
+nSV = 476, nBSV = 5
+Total nSV = 476
+..*
+optimization finished, #iter = 1578
+obj = -21.745738, rho = 1.108942
+nSV = 467, nBSV = 5
+Total nSV = 467
+*
+optimization finished, #iter = 1520
+obj = -21.449258, rho = 1.090023
+nSV = 486, nBSV = 4
+Total nSV = 486
+*.*
+optimization finished, #iter = 1451
+obj = -20.235327, rho = 1.093937
+nSV = 467, nBSV = 2
+Total nSV = 467
+*..*
+optimization finished, #iter = 1496
+obj = -20.965218, rho = 1.083646
+nSV = 472, nBSV = 2
+Total nSV = 472
+*
+optimization finished, #iter = 1538
+obj = -23.314568, rho = 1.090718
+nSV = 495, nBSV = 5
+Total nSV = 495
+*.*
+optimization finished, #iter = 1333
+obj = -18.958926, rho = 1.106928
+nSV = 437, nBSV = 3
+Total nSV = 437
+.*
+optimization finished, #iter = 1523
+obj = -21.958104, rho = 1.103315
+nSV = 466, nBSV = 5
+Total nSV = 466
+.*
+optimization finished, #iter = 1555
+obj = -20.987186, rho = 1.115861
+nSV = 492, nBSV = 1
+Total nSV = 492
+.*
+optimization finished, #iter = 1618
+obj = -19.502541, rho = 1.070129
+nSV = 491, nBSV = 2
+Total nSV = 491
+.*
+optimization finished, #iter = 1545
+obj = -22.021226, rho = 1.068978
+nSV = 499, nBSV = 4
+Total nSV = 499
+.*
+optimization finished, #iter = 1788
+obj = -24.894657, rho = -1.134431
+nSV = 530, nBSV = 6
+Total nSV = 530
+.*
+optimization finished, #iter = 1737
+obj = -24.182733, rho = -1.122900
+nSV = 531, nBSV = 5
+Total nSV = 531
+.*
+optimization finished, #iter = 1791
+obj = -24.892410, rho = -1.123584
+nSV = 525, nBSV = 3
+Total nSV = 525
+.*
+optimization finished, #iter = 1840
+obj = -26.020387, rho = -1.102317
+nSV = 557, nBSV = 5
+Total nSV = 557
+.*.*
+optimization finished, #iter = 2028
+obj = -26.316430, rho = -1.095810
+nSV = 577, nBSV = 5
+Total nSV = 577
+.*
+optimization finished, #iter = 1792
+obj = -28.038688, rho = 1.138484
+nSV = 544, nBSV = 6
+Total nSV = 544
+.*
+optimization finished, #iter = 1730
+obj = -22.290945, rho = 1.192347
+nSV = 511, nBSV = 3
+Total nSV = 511
+.*
+optimization finished, #iter = 1834
+obj = -25.887815, rho = 1.071780
+nSV = 564, nBSV = 4
+Total nSV = 564
+.*
+optimization finished, #iter = 1750
+obj = -25.407275, rho = 1.091540
+nSV = 539, nBSV = 4
+Total nSV = 539
+.*
+optimization finished, #iter = 1770
+obj = -24.439557, rho = 1.113409
+nSV = 530, nBSV = 5
+Total nSV = 530
+.*.*
+optimization finished, #iter = 2146
+obj = -30.485994, rho = -1.139160
+nSV = 627, nBSV = 7
+Total nSV = 627
+[LibSVM]Best parameters found: {'kernel': 'linear', 'degree': 3, 'C': 1}
+
+Model performance: TRAIN
+----------------------
+Accuracy: 0.9997
+Precision: 1.0000
+Recall: 0.9981
+F1-score: 0.9990
+AUROC: 1.0000
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9857
+Precision: 0.9950
+Recall: 0.8973
+F1-score: 0.9437
+AUROC: 0.9852
+
+Saved model: saved_models/SVM.joblib
+[LibSVM][LibSVM][LibSVM][LibSVM][LibSVM]
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

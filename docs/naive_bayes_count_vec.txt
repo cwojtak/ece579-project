@@ -1,0 +1,32 @@
+Mapped labels: spam->1, ham->0.
+Removed stopwords: english.
+Vectorized data with count BoW.
+
+Split data.
+
+Performing a grid hyperparameter search with Stratified K-Fold cross validation
+Best parameters found: {'var_smoothing': 1e-11}
+
+Model performance: TRAIN
+----------------------
+Accuracy: 0.9413
+Precision: 0.6955
+Recall: 1.0000
+F1-score: 0.8204
+AUROC: 0.9661
+
+Model performance: TEST
+----------------------
+Accuracy: 0.8715
+Precision: 0.5112
+Recall: 0.9152
+F1-score: 0.6560
+AUROC: 0.8900
+
+Saved model: saved_models/naive_bayes.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

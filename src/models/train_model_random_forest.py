@@ -2,6 +2,7 @@
 # https://scikit-learn.org/stable/modules/ensemble.html#random-forests-and-other-randomized-tree-ensembles
 
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from joblib import dump
 import evaluate_model
 import pandas as pd
@@ -16,9 +17,27 @@ def load_training_data():
 
 def train_random_forest(X_train, y_train):
     """Train a random forest model using the provided training data."""
-    model = RandomForestClassifier(n_estimators=100, verbose=1)
-    model.fit(X_train, y_train)
-    return model
+    # Hyperparameter Search Space
+    param_grid = {
+        'class_weight': ['balanced', 'balanced_subsample', None],
+        'max_features': ['sqrt', 'log2', None],
+        'n_estimators': [50, 100, 200]
+    }
+
+    # Initialize the Random Forest model
+    model = RandomForestClassifier(verbose=1)
+
+    # Using stratified K fold sampling to address class imbalances as base SVM had low recall
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+
+    # Performing a grid hyperparameter search because grid search takes a long time
+    print("Performing a grid hyperparameter search with Stratified K-Fold cross validation")
+
+    rand_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=skf, n_jobs=-1)
+    rand_search.fit(X_train, y_train)
+    print(f"Best parameters found: {rand_search.best_params_}\n")
+
+    return rand_search.best_estimator_
 
 def save_model(model, model_path):
     """Save the trained model to the specified path using joblib."""
