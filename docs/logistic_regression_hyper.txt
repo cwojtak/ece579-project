@@ -1,4 +1,6 @@
 Mapped labels: spam->1, ham->0.
+Replaced long strings of numbers with a unique word.
+Removed stop words: a
 Vectorized data with binary BoW.
 
 Split data.
@@ -13,6 +15,7 @@ Recall: 1.0000
 F1-score: 1.0000
 AUROC: 1.0000
 
+Indices of misclassification (starting at 0); refer to the raw data file:
 Model performance: TEST
 ----------------------
 Accuracy: 0.9863
@@ -21,7 +24,33 @@ Recall: 0.9062
 F1-score: 0.9464
 AUROC: 0.9917
 
+Indices of misclassification (starting at 0); refer to the raw data file:
+4542
+1941
+5380
+2824
+2353
+2805
+335
+3361
+1431
+4677
+1459
+3303
+2248
+1639
+1270
+5540
+752
+1461
+3461
+4476
+4915
+4528
+4296
 Saved model: logistic_regression_hyper_search.joblib
+/home/cwojtak/.local/lib/python3.8/site-packages/sklearn/svm/_base.py:1250: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
 
 Removing data/processed/*
 Removing data/split/train/*
