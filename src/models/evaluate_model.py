@@ -49,11 +49,14 @@ def evaluate(model, X_test, y_test, traintest="TEST", org_indices=None):
     print(f"AUROC: {auroc:.4f}\n")
 
     # List misclassifications
-    if org_indices is not None:
-        print("Indices of misclassification (starting at 0); refer to the raw data file:")
+    if org_indices is not None and accuracy != 1:
+        print("Misclassified texts:")
         misclassifications = np.where(y_test != predictions)
-        for index in misclassifications[0]:
-            print(org_indices[index])
+
+        with open("data/raw/SMSSpamCollection", "r") as raw_data:
+            raw_data_lines = raw_data.readlines()
+            for index in misclassifications[0]:
+                print(f"{index}-{org_indices[index]}: {raw_data_lines[org_indices[index]]}")
 
 
 if __name__ == "__main__":
