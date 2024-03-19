@@ -31,11 +31,11 @@ def train_naive_bayes(X_train, y_train):
     # Performing a grid hyperparameter search because grid search takes a long time
     print("Performing a grid hyperparameter search with Stratified K-Fold cross validation")
 
-    rand_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=skf, n_jobs=-1)
-    rand_search.fit(X_train, y_train)
-    print(f"Best parameters found: {rand_search.best_params_}\n")
+    grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=skf, n_jobs=-1)
+    grid_search.fit(X_train, y_train)
+    print(f"Best parameters found: {grid_search.best_params_}\n")
 
-    return rand_search.best_estimator_
+    return grid_search.best_estimator_
 
 def save_model(model, model_path):
     """Save the trained model to the specified path using joblib."""

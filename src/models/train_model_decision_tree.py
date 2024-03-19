@@ -1,6 +1,7 @@
 # Using reference https://scikit-learn.org/stable/modules/tree.html
 
 from sklearn import tree
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from joblib import dump
 import evaluate_model
 import pandas as pd
@@ -16,6 +17,34 @@ def load_training_data():
 
 def train_decision_tree(X_train, y_train):
     """Train a decision tree using the provided training data."""
+
+    # For some reason, hyperparameter search caused worse results...
+    """
+    # Hyperparameter Search Space
+    param_grid = {
+        'class_weight': ['balanced', None],
+        'max_features': ['sqrt', 'log2', None],
+        'max_depth': [50, 75, 100, None],
+        'min_samples_split': [2, 3, 4],
+        'min_samples_leaf': [1, 2]
+    }
+
+    # Initialize the Decision Tree model
+    model = tree.DecisionTreeClassifier()
+
+    # Using stratified K fold sampling to address class imbalances as base SVM had low recall
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+
+    # Performing a grid hyperparameter search because grid search takes a long time
+    print("Performing a grid hyperparameter search with Stratified K-Fold cross validation")
+
+    grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=skf, n_jobs=-1)
+    grid_search.fit(X_train, y_train)
+    print(f"Best parameters found: {grid_search.best_params_}\n")
+
+    return grid_search.best_estimator_
+    """
+
     model = tree.DecisionTreeClassifier()
     model.fit(X_train, y_train)
     return model
