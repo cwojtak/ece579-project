@@ -1,0 +1,53 @@
+.*
+optimization finished, #iter = 1706
+obj = -246.657697, rho = 0.004459
+nSV = 1078, nBSV = 98
+Total nSV = 1078
+.*
+optimization finished, #iter = 1751
+obj = -249.856576, rho = 0.025360
+nSV = 1087, nBSV = 102
+Total nSV = 1087
+.*
+optimization finished, #iter = 1772
+obj = -251.441924, rho = 0.014246
+nSV = 1110, nBSV = 100
+Total nSV = 1110
+.*
+optimization finished, #iter = 1763
+obj = -252.964855, rho = -0.000877
+nSV = 1106, nBSV = 103
+Total nSV = 1106
+.*
+optimization finished, #iter = 1756
+obj = -248.391981, rho = 0.033560
+nSV = 1110, nBSV = 101
+Total nSV = 1110
+.*.*
+optimization finished, #iter = 2026
+obj = -286.058881, rho = -0.027448
+nSV = 1305, nBSV = 119
+Total nSV = 1305
+[LibSVM]Model performance: TRAIN
+----------------------
+Accuracy: 0.9962
+Precision: 1.0000
+Recall: 0.9713
+F1-score: 0.9855
+AUROC: 0.9975
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9791
+Precision: 1.0000
+Recall: 0.8438
+F1-score: 0.9153
+AUROC: 0.9954
+
+Saved model: saved_models/SVM.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

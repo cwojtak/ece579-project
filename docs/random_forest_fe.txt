@@ -1,0 +1,443 @@
+Mapped labels: spam->1, ham->0.
+Replaced long strings of numbers and dashes with a unique word.
+Replaced 5 digit numbers with a unique word.
+Replaced monetary amounts with a unique word.
+Vectorized data with binary BoW.
+
+Split data.
+
+Performing a grid hyperparameter search with Stratified K-Fold cross validation
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    1.7s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    6.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+Best parameters found: {'class_weight': None, 'max_features': 'sqrt', 'n_estimators': 200}
+
+Model performance: TRAIN
+----------------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+AUROC: 1.0000
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9886
+Precision: 1.0000
+Recall: 0.9152
+F1-score: 0.9557
+AUROC: 0.9956
+
+Misclassified texts:
+40-4752: spam	Your weekly Cool-Mob tones are ready to download !This weeks new Tones include: 1) Crazy Frog-AXEL F>>> 2) Akon-Lonely>>> 3) Black Eyed-Dont P >>>More info in n
+
+103-3954: spam	Refused a loan? Secured or Unsecured? Can't get credit? Call free now 0800 195 6669 or text back 'help' & we will!
+
+161-3530: spam	Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!
+
+252-2823: spam	ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.
+
+274-3141: spam	sexy sexy cum and text me im wet and warm and ready for some porn! u up for some fun? THIS MSG IS FREE RECD MSGS 150P INC VAT 2 CANCEL TEXT STOP
+
+384-2804: spam	FreeMsg>FAV XMAS TONES!Reply REAL
+
+516-3360: spam	Sorry I missed your call let's talk when you have the time. I'm on 07090201529
+
+565-1430: spam	For sale - arsenal dartboard. Good condition but no doubles or trebles!
+
+726-3302: spam	RCT' THNQ Adrian for U text. Rgds Vatian
+
+759-4086: spam	Orange brings you ringtones from all time Chart Heroes, with a free hit each week! Go to Ringtones & Pics on wap. To stop receiving these tips reply STOP.
+
+885-2247: spam	Hi ya babe x u 4goten bout me?' scammers getting smart..Though this is a regular vodafone no, if you respond you get further prem rate msg/subscription. Other nos used also. Beware!
+
+1005-1638: spam	0A$NETWORKS allow companies to bill for SMS, so they are responsible for their "suppliers", just as a shop has to give a guarantee on what they sell. B. G.
+
+1142-751: spam	Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?
+
+1183-4200: spam	cmon babe, make me horny, *turn* me on! Txt me your fantasy now babe -) Im hot, sticky and need you now. All replies cost £1.50. 2 cancel send STOP
+
+1192-2071: spam	Sexy Singles are waiting for you! Text your AGE followed by your GENDER as wither M or F E.G.23F. For gay men text your AGE followed by a G. e.g.23G.
+
+1224-4506: spam	Mobile Club: Choose any of the top quality items for your mobile. 7cfca1a
+
+1243-1460: spam	Bought one ringtone and now getting texts costing 3 pound offering more tones etc
+
+1262-3460: spam	Not heard from U4 a while. Call me now am here all night with just my knickers on. Make me beg for it like U did last time 01223585236 XX Luv Nikiyu4.net
+
+1395-4914: spam	Goal! Arsenal 4 (Henry, 7 v Liverpool 2 Henry scores with a simple shot from 6 yards from a pass by Bergkamp to give Arsenal a 2 goal margin after 78 mins.
+
+Saved model: saved_models/random_forest.joblib
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.2s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   14.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   39.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   42.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.8s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   12.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    9.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   56.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   42.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   37.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   37.4s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.6min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   43.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   13.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   10.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   38.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   43.7s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.9min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    4.2s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   15.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   42.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   45.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    9.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   48.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.7s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   18.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   52.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   46.8s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  3.0min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   43.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.3s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   13.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   10.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   40.9s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   43.8s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.9min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.4s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   11.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   46.7s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  3.2min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   51.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   37.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   44.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   44.9s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  3.0min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.5s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   11.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   41.9s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.8min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.3s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   14.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.3s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    9.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   53.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   11.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   45.2s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  3.0min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    9.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   56.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    5.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   41.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    4.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    4.4s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   18.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.5s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   12.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   46.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    4.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   15.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.2s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   10.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:  1.1min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   12.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   48.2s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  3.3min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   50.6s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.5min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   38.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   13.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   10.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   45.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.7s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   12.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    1.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   48.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   46.6s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.2min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    5.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.6s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   12.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    5.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    4.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    4.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    5.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    5.5s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   17.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.5s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   11.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   48.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    1.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.5s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   56.8s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   48.2s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.2min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    4.3s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   15.9s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   41.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   42.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.2s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   13.4s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    1.9s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   53.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   49.6s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.3min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    3.8s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:   18.6s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   43.7s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  3.0min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    2.3s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   58.1s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:   49.3s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:  2.3min
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.0s
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

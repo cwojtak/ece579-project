@@ -1,13 +1,37 @@
 #!/bin/bash
 
-# Identify python interpreter
-PYTHON3=.venv/Scripts/python.exe
+# Function to send commands and python output to text file for documentation.
+output_file="docs/decision_tree.txt"
+if [ -f "$output_file" ]; then
+    rm "$output_file"
+    echo "Deleted existing output file: $output_file"
+fi
+function run_command {
+    command="$1"
+    echo "Running command: $command"
+    {
+        $command 2>&1
+    } >> "$output_file"
+    echo "" >> "$output_file"
+}
 
-# Make directories to store data in
-mkdir data/processed
-mkdir data/split
-mkdir data/split/test
-mkdir data/split/train
+# Check if directories exist, and create them if they don't
+if [ ! -d "data/processed" ]; then
+    mkdir "data/processed"
+    echo "Created directory: data/processed"
+fi
+if [ ! -d "data/split" ]; then
+    mkdir "data/split"
+    echo "Created directory: data/split"
+fi
+if [ ! -d "data/split/test" ]; then
+    mkdir "data/split/test"
+    echo "Created directory: data/split/test"
+fi
+if [ ! -d "data/split/train" ]; then
+    mkdir "data/split/train"
+    echo "Created directory: data/split/train"
+fi
 
 # Only do data preprocessing and splitting if it hasn't already been done
 if [ ! -f data/split/test/X_test.csv ] ||
@@ -16,19 +40,15 @@ if [ ! -f data/split/test/X_test.csv ] ||
    [ ! -f data/split/train/y_train.csv ]; then
 
 # Data preprocessing
-echo "Preprocessing data..."
-$PYTHON3 src/data/preprocess_binary_BoW.py
+run_command "python3 src/data/preprocess_feature_extraction.py"
 
 # Data splitting
-echo "Splitting data..."
-$PYTHON3 src/utils/split.py
+run_command "python3 src/utils/split.py"
 
 fi
 
-# Train a model
-echo "Training model..."
-$PYTHON3 src/models/train_model_decision_tree.py
+# Train a model. NOTE: This also evaluates on training and testing data.
+run_command "python3 src/models/train_model_decision_tree.py"
 
-# Evaluate a model
-echo "Evaluating model..."
-$PYTHON3 src/models/evaluate_model.py saved_models/decision_tree.joblib
+# Cleanup workspace
+run_command "bin/cleanup.sh"

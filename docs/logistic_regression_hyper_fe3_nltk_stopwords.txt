@@ -1,0 +1,63 @@
+Mapped labels: spam->1, ham->0.
+Replaced long strings of numbers and dashes with a unique word.
+Replaced 5 digit numbers with a unique word.
+Replaced monetary amounts with a unique word.
+Removed NLTK english stopwords.
+Vectorized data with binary BoW.
+
+Split data.
+
+Best parameters found: {'C': 10, 'class_weight': 'balanced', 'fit_intercept': True, 'penalty': 'l2', 'solver': 'liblinear'}
+
+Model performance: TRAIN
+----------------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+AUROC: 1.0000
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9916
+Precision: 0.9907
+Recall: 0.9464
+F1-score: 0.9680
+AUROC: 0.9893
+
+Misclassified texts:
+40-4752: spam	Your weekly Cool-Mob tones are ready to download !This weeks new Tones include: 1) Crazy Frog-AXEL F>>> 2) Akon-Lonely>>> 3) Black Eyed-Dont P >>>More info in n
+
+161-3530: spam	Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!
+
+252-2823: spam	ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.
+
+384-2804: spam	FreeMsg>FAV XMAS TONES!Reply REAL
+
+565-1430: spam	For sale - arsenal dartboard. Good condition but no doubles or trebles!
+
+726-3302: spam	RCT' THNQ Adrian for U text. Rgds Vatian
+
+735-1497: ham	I'm always on yahoo messenger now. Just send the message to me and i.ll get it you may have to send it in the mobile mode sha but i.ll get it. And will reply.
+
+885-2247: spam	Hi ya babe x u 4goten bout me?' scammers getting smart..Though this is a regular vodafone no, if you respond you get further prem rate msg/subscription. Other nos used also. Beware!
+
+1005-1638: spam	0A$NETWORKS allow companies to bill for SMS, so they are responsible for their "suppliers", just as a shop has to give a guarantee on what they sell. B. G.
+
+1142-751: spam	Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?
+
+1224-4506: spam	Mobile Club: Choose any of the top quality items for your mobile. 7cfca1a
+
+1243-1460: spam	Bought one ringtone and now getting texts costing 3 pound offering more tones etc
+
+1395-4914: spam	Goal! Arsenal 4 (Henry, 7 v Liverpool 2 Henry scores with a simple shot from 6 yards from a pass by Bergkamp to give Arsenal a 2 goal margin after 78 mins.
+
+1575-263: ham	MY NO. IN LUTON 0125698789 RING ME IF UR AROUND! H*
+
+Saved model: logistic_regression_hyper_search.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

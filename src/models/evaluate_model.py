@@ -4,6 +4,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import joblib
 import sys
 
+
 def load_model(path):
     """Load saved model from path."""
     try:
@@ -20,21 +21,23 @@ def load_test_data():
     try:
         X_test = pd.read_csv("data/split/test/X_test.csv")
         y_test = pd.read_csv("data/split/test/y_test.csv").squeeze()
-        return X_test, y_test
+        org_indices_test = pd.read_csv("data/split/test/org_indices_test.csv").squeeze()
+        return X_test, y_test, org_indices_test
     except Exception as e:
         print(f"Error loading test data: {e}")
         sys.exit(1)
 
-def evaluate(model, X_test, y_test, traintest="TEST"):
+
+def evaluate(model, X_test, y_test, traintest="TEST", org_indices=None):
     """Evaluate the model using accuracy, precision, recall, f1-score, and AUROC."""
     predictions = model.predict(X_test)
-    
+
     accuracy = accuracy_score(y_test, predictions)
     precision = precision_score(y_test, predictions, average='binary')
     recall = recall_score(y_test, predictions, average='binary')
     f1 = f1_score(y_test, predictions, average='binary')
 
-    probabilities = model.predict_proba(X_test)[:,1]
+    probabilities = model.predict_proba(X_test)[:, 1]
     auroc = roc_auc_score(y_test, probabilities)
 
     print(f"Model performance: {traintest}")
@@ -45,6 +48,17 @@ def evaluate(model, X_test, y_test, traintest="TEST"):
     print(f"F1-score: {f1:.4f}")
     print(f"AUROC: {auroc:.4f}\n")
 
+    # List misclassifications
+    if org_indices is not None and accuracy != 1:
+        print("Misclassified texts:")
+        misclassifications = np.where(y_test != predictions)
+
+        with open("data/raw/SMSSpamCollection", "r") as raw_data:
+            raw_data_lines = raw_data.readlines()
+            for index in misclassifications[0]:
+                print(f"{index}-{org_indices[index]}: {raw_data_lines[org_indices[index]]}")
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python evaluate_model.py <model_path>")
@@ -53,6 +67,6 @@ if __name__ == "__main__":
     model_path = sys.argv[1]
 
     model = load_model(model_path)
-    X_test, y_test = load_test_data()
+    X_test, y_test, org_indices = load_test_data()
 
-    evaluate(model, X_test, y_test)
+    evaluate(model, X_test, y_test, org_indices)

@@ -1,0 +1,136 @@
+Mapped labels: spam->1, ham->0.
+Removed stopwords: english.
+Vectorized data with count BoW.
+
+Split data.
+
+Model performance: TRAIN
+----------------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+AUROC: 1.0000
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9683
+Precision: 0.9296
+Recall: 0.8259
+F1-score: 0.8747
+AUROC: 0.9081
+
+Misclassified texts:
+4-473: ham	Nothing. I meant that once the money enters your account here, the bank will remove its flat rate. Someone transfered  &lt;#&gt;  to my account and  &lt;#&gt; dollars got removed. So the banks differ and charges also differ.be sure you trust the 9ja person you are sending account details to cos...
+
+41-2057: ham	.Please charge my mobile when you get up in morning.
+
+53-2556: spam	FreeMSG You have been awarded a FREE mini DIGITAL CAMERA, just reply SNAP to collect your prize! (quizclub Opt out? Stop 80122300p/wk SP:RWM Ph:08704050406)
+
+128-1940: spam	More people are dogging in your area now. Call 09090204448 and join like minded guys. Why not arrange 1 yourself. There's 1 this evening. A£1.50 minAPN LS278BB
+
+145-4062: ham	Aight I've been set free, think you could text me blake's address? It occurs to me I'm not quite as sure what I'm doing as I thought I was
+
+160-2683: ham	I got a call from a landline number. . . I am asked to come to anna nagar . . . I will go in the afternoon
+
+161-3530: spam	Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!
+
+208-5379: spam	The current leading bid is 151. To pause this auction send OUT. Customer Care: 08718726270
+
+223-3592: ham	How much would it cost to hire a hitman
+
+243-1274: spam	network operator. The service is free. For T & C's visit 80488.biz
+
+252-2823: spam	ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.
+
+322-1263: spam	Hungry gay guys feeling hungry and up 4 it, now. Call 08718730555 just 10p/min. To stop texts call 08712460324 (10p/min)
+
+384-2804: spam	FreeMsg>FAV XMAS TONES!Reply REAL
+
+393-5370: spam	IMPORTANT MESSAGE. This is a final contact attempt. You have important messages waiting out our customer claims dept. Expires 13/4/04. Call 08717507382 NOW!
+
+463-4616: spam	Sunshine Quiz! Win a super Sony DVD recorder if you canname the capital of Australia? Text MQUIZ to 82277. B
+
+493-1122: spam	Do you want 750 anytime any network mins 150 text and a NEW video phone for only five pounds per week call 08000776320 now or reply for delivery Tomorrow
+
+516-3360: spam	Sorry I missed your call let's talk when you have the time. I'm on 07090201529
+
+565-1430: spam	For sale - arsenal dartboard. Good condition but no doubles or trebles!
+
+578-761: spam	Romantic Paris. 2 nights, 2 flights from £79 Book now 4 next year. Call 08704439680Ts&Cs apply.
+
+583-945: ham	I sent my scores to sophas and i had to do secondary application for a few schools. I think if you are thinking of applying, do a research on cost also. Contact joke ogunrinde, her school is one me the less expensive ones
+
+611-2267: spam	<Forwarded from 88877>FREE entry into our £250 weekly comp just send the word ENTER to 88877 NOW. 18 T&C www.textcomp.com
+
+628-1458: spam	CLAIRE here am havin borin time & am now alone U wanna cum over 2nite? Chat now 09099725823 hope 2 C U Luv CLAIRE xx Calls£1/minmoremobsEMSPOBox45PO139WA
+
+642-2699: spam	FROM 88066 LOST £12 HELP
+
+661-1154: spam	1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(£1.50p. m)
+
+681-3944: ham	I got a call from a landline number. . . I am asked to come to anna nagar . . . I will go in the afternoon
+
+700-4574: spam	"URGENT! This is the 2nd attempt to contact U!U have WON £1000CALL 09071512432 b4 300603t&csBCM4235WC1N3XX.callcost150ppmmobilesvary. max£7. 50"
+
+726-3302: spam	RCT' THNQ Adrian for U text. Rgds Vatian
+
+735-1497: ham	I'm always on yahoo messenger now. Just send the message to me and i.ll get it you may have to send it in the mobile mode sha but i.ll get it. And will reply.
+
+759-4086: spam	Orange brings you ringtones from all time Chart Heroes, with a free hit each week! Go to Ringtones & Pics on wap. To stop receiving these tips reply STOP.
+
+772-2496: spam	WINNER! As a valued network customer you hvae been selected to receive a £900 reward! To collect call 09061701444. Valid 24 hours only. ACL03530150PM
+
+845-3483: spam	Do you want a NEW video phone750 anytime any network mins 150 text for only five pounds per week call 08000776320 now or reply for delivery tomorrow
+
+1005-1638: spam	0A$NETWORKS allow companies to bill for SMS, so they are responsible for their "suppliers", just as a shop has to give a guarantee on what they sell. B. G.
+
+1024-3979: ham	Reason is if the team budget is available at last they buy the unsold players for at base rate..
+
+1036-1269: spam	Can U get 2 phone NOW? I wanna chat 2 set up meet Call me NOW on 09096102316 U can cum here 2moro Luv JANE xx Calls£1/minmoremobsEMSPOBox45PO139WA
+
+1040-3425: spam	Am new 2 club & dont fink we met yet Will B gr8 2 C U Please leave msg 2day wiv ur area 09099726553 reply promised CARLIE x Calls£1/minMobsmore LKPOBOX177HP51FL
+
+1087-5539: spam	Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX
+
+1134-5338: ham	Sounds better than my evening im just doing my costume. Im not sure what time i finish tomorrow but i will txt you at the end.
+
+1142-751: spam	Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?
+
+1144-2820: ham	Don't forget who owns you and who's private property you are ... And be my good boy always .. *passionate kiss*
+
+1192-2071: spam	Sexy Singles are waiting for you! Text your AGE followed by your GENDER as wither M or F E.G.23F. For gay men text your AGE followed by a G. e.g.23G.
+
+1250-3556: spam	From next month get upto 50% More Calls 4 Ur standard network charge 2 activate Call 9061100010 C Wire3.net 1st4Terms PoBox84 M26 3UZ Cost £1.50 min MobcudB more
+
+1262-3460: spam	Not heard from U4 a while. Call me now am here all night with just my knickers on. Make me beg for it like U did last time 01223585236 XX Luv Nikiyu4.net
+
+1276-5383: spam	You have 1 new message. Call 0207-083-6089
+
+1335-1663: spam	Hi if ur lookin 4 saucy daytime fun wiv busty married woman Am free all next week Chat now 2 sort time 09099726429 JANINExx Calls£1/minMobsmoreLKPOBOX177HP51FL
+
+1336-4009: ham	Forgot you were working today! Wanna chat, but things are ok so drop me a text when you're free / bored etc and i'll ring. Hope all is well, nose essay and all xx
+
+1345-837: spam	Do you want 750 anytime any network mins 150 text and a NEW VIDEO phone for only five pounds per week call 08002888812 or reply for delivery tomorrow
+
+1356-4475: spam	Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min
+
+1394-3161: ham	How much did ur hdd casing cost.
+
+1395-4914: spam	Goal! Arsenal 4 (Henry, 7 v Liverpool 2 Henry scores with a simple shot from 6 yards from a pass by Bergkamp to give Arsenal a 2 goal margin after 78 mins.
+
+1399-1229: spam	FREE entry into our £250 weekly comp just send the word ENTER to 84128 NOW. 18 T&C www.textcomp.com cust care 08712405020.
+
+1401-1227: spam	Reply with your name and address and YOU WILL RECEIVE BY POST a weeks completely free accommodation at various global locations www.phb1.com ph:08700435505150p
+
+1410-332: ham	Maybe i could get book out tomo then return it immediately ..? Or something.
+
+1425-5: spam	FreeMsg Hey there darling it's been 3 week's now and no word back! I'd like some fun you up for it still? Tb ok! XxX std chgs to send, £1.50 to rcv
+
+Saved model: decision_tree.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

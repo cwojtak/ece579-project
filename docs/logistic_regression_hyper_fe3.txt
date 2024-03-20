@@ -1,0 +1,90 @@
+Mapped labels: spam->1, ham->0.
+Replaced long strings of numbers and dashes with a unique word.
+Replaced 5 digit numbers with a unique word.
+Replaced monetary amounts with a unique word.
+Removed stop words: a
+Vectorized data with binary BoW.
+
+Split data.
+
+Best parameters found: {'C': 0.1, 'class_weight': 'balanced', 'fit_intercept': True, 'penalty': 'l2', 'solver': 'liblinear'}
+
+Model performance: TRAIN
+----------------------
+Accuracy: 0.9962
+Precision: 0.9922
+Recall: 0.9790
+F1-score: 0.9856
+AUROC: 0.9999
+
+Misclassified texts:
+145-955: spam	Filthy stories and GIRLS waiting for your
+
+260-2965: spam	Do you ever notice that when you're driving, anyone going slower than you is an idiot and everyone driving faster than you is a maniac?
+
+337-4514: spam	Money i have won wining number 946 wot do i do next
+
+896-3981: spam	ringtoneking 84484
+
+953-574: ham	Waiting for your call.
+
+1132-3692: ham	Sir, i am waiting for your call, once free please call me.
+
+1190-4016: spam	You will be receiving this week's Triple Echo ringtone shortly. Enjoy it!
+
+1298-68: spam	Did you hear about the new "Divorce Barbie"? It comes with all of Ken's stuff!
+
+1443-5122: spam	PRIVATE! Your 2003 Account Statement for 078
+
+1500-1777: spam	Call FREEPHONE 0800 542 0578 now!
+
+1656-2663: spam	Hello darling how are you today? I would love to have a chat, why dont you tell me what you look like and what you are in to sexy?
+
+1793-3742: spam	2/2 146tf150p
+
+2762-4729: ham	I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to  &lt;#&gt;
+
+2810-989: ham	Yun ah.the ubi one say if ü wan call by tomorrow.call 67441233 look for irene.ere only got bus8,22,65,61,66,382. Ubi cres,ubi tech park.6ph for 1st 5wkg days.èn
+
+3356-1875: spam	Would you like to see my XXX pics they are so hot they were nearly banned in the uk!
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9928
+Precision: 0.9907
+Recall: 0.9554
+F1-score: 0.9727
+AUROC: 0.9925
+
+Misclassified texts:
+252-2823: spam	ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.
+
+384-2804: spam	FreeMsg>FAV XMAS TONES!Reply REAL
+
+402-334: ham	Any chance you might have had with me evaporated as soon as you violated my privacy by stealing my phone number from your employer's paperwork. Not cool at all. Please do not contact me again or I will report you to your supervisor.
+
+565-1430: spam	For sale - arsenal dartboard. Good condition but no doubles or trebles!
+
+726-3302: spam	RCT' THNQ Adrian for U text. Rgds Vatian
+
+885-2247: spam	Hi ya babe x u 4goten bout me?' scammers getting smart..Though this is a regular vodafone no, if you respond you get further prem rate msg/subscription. Other nos used also. Beware!
+
+1005-1638: spam	0A$NETWORKS allow companies to bill for SMS, so they are responsible for their "suppliers", just as a shop has to give a guarantee on what they sell. B. G.
+
+1142-751: spam	Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?
+
+1243-1460: spam	Bought one ringtone and now getting texts costing 3 pound offering more tones etc
+
+1262-3460: spam	Not heard from U4 a while. Call me now am here all night with just my knickers on. Make me beg for it like U did last time 01223585236 XX Luv Nikiyu4.net
+
+1391-5487: ham	Also fuck you and your family for going to rhode island or wherever the fuck and leaving me all alone the week I have a new bong &gt;:(
+
+1395-4914: spam	Goal! Arsenal 4 (Henry, 7 v Liverpool 2 Henry scores with a simple shot from 6 yards from a pass by Bergkamp to give Arsenal a 2 goal margin after 78 mins.
+
+Saved model: logistic_regression_hyper_search.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

@@ -1,0 +1,798 @@
+Mapped labels: spam->1, ham->0.
+Replaced long strings of numbers and dashes with a unique word.
+Replaced 5 digit numbers with a unique word.
+Replaced monetary amounts with a unique word.
+Vectorized data with binary BoW.
+
+Split data.
+
+Performing a grid hyperparameter search with Stratified K-Fold cross validation
+Best parameters found: {'var_smoothing': 1e-11}
+
+Model performance: TRAIN
+----------------------
+Accuracy: 0.9492
+Precision: 0.7254
+Recall: 1.0000
+F1-score: 0.8408
+AUROC: 0.9707
+
+Misclassified texts:
+4-3065: ham	Ok. How many should i buy.
+
+30-1972: ham	Enjoy ur life. . Good night
+
+33-2509: ham	Ok...
+
+42-5309: ham	What you did in  leave.
+
+54-4999: ham	Can you talk with me..
+
+57-3336: ham	Sorry, got a late start, we're on the way
+
+68-5303: ham	At WHAT TIME should i come tomorrow
+
+70-1814: ham	Yes we are chatting too.
+
+88-2451: ham	K..give back my thanks.
+
+150-4503: ham	Wot is u up 2 then bitch?
+
+153-4859: ham	Ok...
+
+209-2952: ham	Hey now am free you can call me.
+
+232-3615: ham	Ok c ü then.
+
+242-606: ham	TaKe CaRE n gET WeLL sOOn
+
+246-2266: ham	I cant pick the phone right now. Pls send a message
+
+253-4487: ham	have * good weekend.
+
+261-5359: ham	Ok
+
+301-3730: ham	I'm at home. Please call
+
+304-1319: ham	Ok...
+
+322-4040: ham	I cant pick the phone right now. Pls send a message
+
+333-5210: ham	Hi.what you think about match?
+
+341-632: ham	Thank u!
+
+349-3857: ham	I'm ok. Will do my part tomorrow
+
+351-5175: ham	U 2.
+
+352-1237: ham	How much are we getting?
+
+372-991: ham	26th OF JULY
+
+400-126: ham	Good stuff, will do.
+
+421-2786: ham	Yeah get the unlimited
+
+459-82: ham	Ok i am on the way to home hi hi
+
+505-5020: ham	Great! How is the office today?
+
+508-3415: ham	No pic. Please re-send.
+
+519-1046: ham	Come round, it's . 
+
+530-45: ham	No calls..messages..missed calls
+
+540-5087: ham	Sorry i missed your call. Can you please call back.
+
+559-2967: ham	Are you being good, baby? :)
+
+560-344: ham	Am not interested to do like that.
+
+586-1925: ham	Ok
+
+622-3254: ham	K:)k..its good:)when are you going?
+
+639-3992: ham	I am on the way to ur home
+
+646-1394: ham	Oh ok..
+
+658-3936: ham	You need to get up. Now.
+
+686-1033: ham	HAPPY NEW YEAR MY NO.1 MAN
+
+687-4525: ham	I've sent ü my part..
+
+718-739: ham	Wish i were with you now!
+
+728-3146: ham	I.ll get there tomorrow and send it to you
+
+750-1427: ham	Ok...
+
+753-495: ham	Are you free now?can i call now?
+
+769-2199: ham	I'm in a movie. Call me 4 wat?
+
+801-83: ham	You will be in the place of that man
+
+809-769: ham	I cant pick the phone right now. Pls send a message
+
+818-596: ham	I am great! How are you?
+
+831-370: ham	Cool, text me when you're ready
+
+893-3396: ham	Then i buy.
+
+894-3138: ham	You're right I have now that I think about it
+
+906-2554: ham	Ü give me some time to walk there.
+
+907-5275: ham	Its too late:)but its k.wish you the same.
+
+914-1799: ham	That one week leave i put know that time. Why.
+
+916-2107: ham	Thank you. I like you as well...
+
+934-2289: ham	Dont you have message offer
+
+935-2631: ham	No way I'm going back there!
+
+953-574: ham	Waiting for your call.
+
+960-2038: ham	Oh sorry please its over
+
+970-4027: ham	Oh ok.. Wat's ur email?
+
+987-2369: ham	If you r @ home then come down within 5 min
+
+1020-452: ham	Thanks for this hope you had a good day today
+
+1021-5388: ham	I'm at work. Please call
+
+1023-1837: ham	Are you wet right now?
+
+1078-5159: ham	K k:) sms chat with me.
+
+1087-88: ham	I'm really not up to it still tonight babe
+
+1106-4575: ham	:( but your not here....
+
+1107-857: ham	Going to take your babe out ?
+
+1120-4404: ham	Just getting back home
+
+1131-1030: ham	Its good, we'll find a way
+
+1171-3028: ham	You still at the game?
+
+1178-4438: ham	How come u got nothing to do?
+
+1196-741: ham	Yes i will be there. Glad you made it.
+
+1203-3769: ham	Where are you call me.
+
+1232-4293: ham	G.W.R
+
+1251-3376: ham	:) 
+
+1292-2351: ham	You will be in the place of that man
+
+1337-1988: ham	No calls..messages..missed calls
+
+1347-1406: ham	K..k..any special today?
+
+1355-4856: ham	Same to u...
+
+1379-3850: ham	U in town alone?
+
+1404-2928: ham	Ok... U enjoy ur shows...
+
+1450-2993: ham	K.i did't see you.:)k:)where are you now?
+
+1453-5410: ham	... Are you in the pub?
+
+1487-5536: ham	Ok which your another number
+
+1496-2789: ham	Ü got wat to buy tell us then ü no need to come in again.
+
+1507-4017: ham	In which place i can get rooms cheap:-)
+
+1530-995: ham	I can't, I don't have her number!
+
+1539-3332: ham	How much it will cost approx . Per month.
+
+1551-74: ham	U can call me now...
+
+1570-247: ham	I asked you to call him now ok
+
+1593-5492: ham	K. I will sent it again
+
+1624-1056: ham	I'm at work. Please call
+
+1635-1289: ham	Happy new year to u too!
+
+1642-4660: ham	I cant pick the phone right now. Pls send a message
+
+1653-1753: ham	Give one miss from that number please
+
+1657-1768: ham	K, want us to come by now?
+
+1678-3364: ham	Can... I'm free...
+
+1726-3386: ham	Ok can...
+
+1733-5351: ham	I'm home...
+
+1763-4356: ham	Sorry, I can't help you on this.
+
+1805-2314: ham	So what do you guys do.
+
+1809-805: ham	K I'll be there before 4.
+
+1815-1567: ham	I am late. I will be there at
+
+1851-315: ham	You made my day. Do have a great day too.
+
+1855-326: ham	No calls..messages..missed calls
+
+1866-5324: ham	Thanks, I'll keep that in mind
+
+1900-5286: ham	Sent me ur email id soon
+
+1901-2176: ham	I'm at work. Please call
+
+1905-3628: ham	Still chance there. If you search hard you will get it..let have a try :)
+
+1922-5550: ham	No, I was trying it all weekend ;V
+
+1932-2182: ham	Ok.
+
+1977-1627: ham	Dear how you. Are you ok?
+
+1993-3439: ham	Its good to hear from you
+
+2018-2167: ham	Thank you. And by the way, I just lost.
+
+2023-5400: ham	Hi. Hope you had a good day. Have a better night.
+
+2044-845: ham	K.k:)when are you going?
+
+2074-960: ham	Where @
+
+2193-1700: ham	Ok...
+
+2235-387: ham	Customer place i will call you.
+
+2280-1020: ham	Don know..wait i will check it.
+
+2313-3465: ham	My phone
+
+2317-3662: ham	Well then you have a great weekend!
+
+2347-920: ham	Dont talk to him ever ok its my word.
+
+2389-131: ham	I'm home.
+
+2395-5531: ham	What about this one then.
+
+2415-4168: ham	Are you at work right now ?
+
+2436-4703: ham	Anytime...
+
+2448-5069: ham	Talk to g and x about that
+
+2456-3339: ham	K, if u bored up just come to my home..
+
+2544-5525: ham	Going to join tomorrow.
+
+2545-3142: ham	Customer place i will call you
+
+2550-5490: ham	K. I will sent it again
+
+2569-3207: ham	At home also.
+
+2580-2585: ham	Hi happy birthday. Hi hi hi hi hi hi hi
+
+2596-1549: ham	Me, i dont know again oh
+
+2611-2838: ham	1's reach home call me.
+
+2640-3492: ham	Ok.
+
+2653-1755: ham	How is your schedule next week? I am out of town this weekend.
+
+2679-1483: ham	Ok...
+
+2731-873: ham	I'll text you when I drop x off
+
+2750-5184: ham	I sent them. Do you like?
+
+2779-4428: ham	So what did the bank say about the money?
+
+2790-3648: ham	Hey babe, my friend had to cancel, still up for a visit ?
+
+2832-133: ham	First answer my question.
+
+2863-1672: ham	Glad to see your reply.
+
+2892-1759: ham	Sorry i'm not free...
+
+2915-1834: ham	When should I come over?
+
+2937-4989: ham	Which channel:-):-):):-).
+
+2952-5213: ham	It is only yesterday true true.
+
+2962-5086: ham	Hey happy birthday...
+
+2967-1601: ham	K.then any other special?
+
+2987-5264: ham	Did you see that film:)
+
+2998-4095: ham	how are you? I miss you!
+
+3020-5008: ham	Oh k. . I will come tomorrow
+
+3070-2431: ham	How was txting and driving
+
+3084-5218: ham	I am late. I will be there at
+
+3088-130: ham	K..k:)how much does it cost?
+
+3091-2888: ham	K I'll take care of it
+
+3136-516: ham	S:)no competition for him.
+
+3140-3655: ham	Why i come in between you people
+
+3144-2645: ham	My friends use to call the same.
+
+3156-4684: ham	Ok u can take me shopping when u get paid =D
+
+3228-1162: ham	K. I will sent it again
+
+3236-4449: ham	I sent them. Do you like?
+
+3308-4041: ham	I'm at home n ready...
+
+3321-1924: ham	Hello. They are going to the village pub at 8 so either come here or there accordingly. Ok?
+
+3374-3322: ham	Yo im right by yo work
+
+3381-258: ham	Where are you lover ? I need you ...
+
+3393-3328: ham	 what number do u live at? Is it 11?
+
+3422-5552: ham	Cool, what time you think you can get here?
+
+3432-4563: ham	How much u trying to get?
+
+3437-4292: ham	Call me when u're done...
+
+3475-2983: ham	Tonight? Yeah, I'd be down for that
+
+3484-1825: ham	Sent me ur email id soon
+
+3485-1949: ham	I cant pick the phone right now. Pls send a message
+
+3486-4748: ham	When you just put in the + sign, choose my number and the pin will show. Right?
+
+3490-3536: ham	I'm at home. Please call
+
+3507-1320: ham	Correct. So how was work today
+
+3540-4014: ham	Ok.
+
+3544-2660: ham	Ok...
+
+3572-5169: ham	Oh did you charge camera
+
+3584-2470: ham	* Am on my way
+
+3593-2409: ham	Dear where you will be when i reach there
+
+3641-1323: ham	Oh just getting even with u.... u?
+
+3683-3711: ham	ARE YOU IN TOWN? THIS IS V. IMPORTANT
+
+3723-5407: ham	So how many days since then?
+
+3743-1634: ham	Yesterday its with me only . Now am going home.
+
+3759-4233: ham	I'm at home. Please call
+
+3809-950: ham	Is that what time you want me to come?
+
+3824-3894: ham	Have you heard from this week?
+
+3825-3917: ham	Ok. C u then.
+
+3837-1023: ham	We still on for tonight?
+
+3838-2459: ham	Cool, I'll text you when I'm on the way
+
+3864-3474: ham	You getting back any time soon?
+
+Model performance: TEST
+----------------------
+Accuracy: 0.8906
+Precision: 0.5565
+Recall: 0.9018
+F1-score: 0.6882
+AUROC: 0.8953
+
+Misclassified texts:
+3-546: ham	Then any special there?
+
+18-1507: spam	Thanks for the Vote. Now sing along with the stars with Karaoke on your mobile. For a FREE link just reply with SING now.
+
+20-2807: ham	Can a not?
+
+27-1304: ham	I cant pick the phone right now. Pls send a message
+
+29-3823: ham	Just normal only here :)
+
+36-4419: ham	When you get free, call me
+
+58-3852: ham	We have all rounder:)so not required:)
+
+60-2741: ham	Nothing. Can...
+
+63-718: ham	Book which lesson? then you msg me... I will call up after work or sth... I'm going to get specs. My membership is PX3748
+
+65-1114: ham	No I'm good for the movie, is it ok if I leave in an hourish?
+
+101-2067: ham	Then. You are eldest know.
+
+113-1738: ham	I cant pick the phone right now. Pls send a message
+
+124-4259: ham	I am late. I will be there at
+
+128-1940: spam	More people are dogging in your area now. Call 09090204448 and join like minded guys. Why not arrange 1 yourself. There's 1 this evening. A£1.50 minAPN LS278BB
+
+132-4858: ham	Thanks  and ! Or bomb and date as my phone wanted to say! 
+
+141-3563: ham	Still chance there. If you search hard you will get it..let have a try :)
+
+156-1082: ham	Can u get pic msgs to your phone?
+
+159-2763: ham	ARR birthday today:) i wish him to get more oscar.
+
+160-2683: ham	I got a call from a landline number. . . I am asked to come to anna nagar . . . I will go in the afternoon
+
+161-3530: spam	Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!
+
+184-4570: ham	At WHAT TIME should i come tomorrow
+
+200-2322: ham	Ok...
+
+203-4565: ham	Tell me again what your address is
+
+214-2618: ham	I cant pick the phone right now. Pls send a message
+
+219-974: ham	what is your account number?
+
+223-3592: ham	How much would it cost to hire a hitman
+
+230-721: ham	Oh is it? Send me the address
+
+240-5173: ham	Oh k. . I will come tomorrow
+
+250-3250: ham	Sorry, I can't help you on this.
+
+252-2823: spam	ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.
+
+263-5302: ham	I can't make it tonight
+
+266-631: ham	Please dont say like that. Hi hi hi
+
+284-1715: ham	Yeah I don't see why not
+
+292-1299: ham	Your daily text from me – a favour this time
+
+322-1263: spam	Hungry gay guys feeling hungry and up 4 it, now. Call 08718730555 just 10p/min. To stop texts call 08712460324 (10p/min)
+
+327-1553: ham	U too...
+
+344-2285: ham	Velly good, yes please!
+
+352-2362: ham	Hi. I'm sorry i missed your call. Can you pls call back.
+
+364-1914: ham	You want to go? 
+
+370-122: ham	here is my new address -apples&pairs&all that malarky
+
+403-3160: ham	Are you up for the challenge? I know i am :)
+
+404-3542: ham	If you are not coughing then its nothing
+
+409-4882: ham	When/where do I pick you up
+
+411-2461: ham	i cant talk to you now.i will call when i can.dont keep calling.
+
+417-1147: ham	Babe ? I lost you ... :-(
+
+437-1121: ham	Cancel cheyyamo?and get some money back?
+
+460-4523: ham	DO U WANT 2 MEET UP 2MORRO
+
+469-3681: ham	I cant pick the phone right now. Pls send a message
+
+474-3156: ham	Ok...
+
+479-4137: ham	have you ever had one foot before?
+
+490-5377: ham	I cant pick the phone right now. Pls send a message
+
+508-3750: spam	Dear Voucher Holder 2 claim your 1st class airport lounge passes when using Your holiday voucher call 08704439680. When booking quote 1st class x 2
+
+511-3626: ham	I want to tel u one thing u should not mistake me k THIS IS THE MESSAGE THAT YOU SENT:)
+
+530-3350: ham	Oh is it! Which brand?
+
+536-4382: ham	Mathews or tait or edwards or anderson
+
+548-177: ham	U still going to the mall?
+
+549-2143: ham	You see the requirements please
+
+565-1430: spam	For sale - arsenal dartboard. Good condition but no doubles or trebles!
+
+569-1610: ham	You all ready for * big day tomorrow?
+
+573-812: ham	So there's a ring that comes with the guys costumes. It's there so they can gift their future yowifes. Hint hint
+
+586-1520: ham	Check wid corect speling i.e. Sarcasm
+
+591-3973: ham	WOT U UP 2 J?
+
+593-1088: ham	You can never do NOTHING
+
+594-4676: spam	Hi babe its Chloe, how r u? I was smashed on saturday night, it was great! How was your weekend? U been missing me? SP visionsms.com Text stop to stop 150p/text
+
+595-3075: ham	Don know. I did't msg him recently.
+
+617-658: ham	You will be in the place of that man
+
+625-2150: ham	Waaaat?? Lololo ok next time then!
+
+628-1458: spam	CLAIRE here am havin borin time & am now alone U wanna cum over 2nite? Chat now 09099725823 hope 2 C U Luv CLAIRE xx Calls£1/minmoremobsEMSPOBox45PO139WA
+
+629-2953: ham	Tell me whos this pls:-)
+
+638-1451: ham	Msg me when rajini comes.
+
+651-4600: ham	Have you laid your airtel line to rest?
+
+680-4927: ham	Oh yes, why is it like torture watching england?
+
+681-3944: ham	I got a call from a landline number. . . I am asked to come to anna nagar . . . I will go in the afternoon
+
+709-3584: ham	I sent your maga that money yesterday oh.
+
+713-141: ham	K, text me when you're on the way
+
+721-1854: ham	I just made some payments so dont have that much. Sorry. Would you want it fedex or the other way.
+
+730-1346: ham	Que pases un buen tiempo or something like that
+
+741-3974: ham	Night night, see you tomorrow
+
+752-215: ham	Sounds great! Are you home now?
+
+790-4862: ham	Nokia phone is lovly..
+
+795-2396: ham	Babe, I'm back ... Come back to me ...
+
+811-166: ham	I place all ur points on e cultures module already.
+
+812-4898: ham	I cant pick the phone right now. Pls send a message
+
+817-2195: ham	Hi my email address has changed now it is 
+
+831-1589: ham	At 4. Let's go to bill millers
+
+849-3214: ham	What's ur pin?
+
+852-1587: ham	There are no other charges after transfer charges and you can withdraw anyhow you like
+
+867-1883: ham	Sorry, I can't help you on this.
+
+870-1899: ham	Wat would u like 4 ur birthday?
+
+874-3270: ham	Raviyog Peripherals bhayandar east
+
+885-2247: spam	Hi ya babe x u 4goten bout me?' scammers getting smart..Though this is a regular vodafone no, if you respond you get further prem rate msg/subscription. Other nos used also. Beware!
+
+889-2773: ham	Still in customer place
+
+890-440: ham	But i have to. I like to have love and arrange.
+
+893-4043: ham	What time do u get out?
+
+894-228: ham	Hey company elama po mudyadhu.
+
+902-299: ham	I cant pick the phone right now. Pls send a message
+
+917-703: ham	What is important is that you prevent dehydration by giving her enough fluids
+
+922-670: ham	Did u receive my msg?
+
+925-2552: ham	I'm done. C ü there.
+
+931-287: ham	Ok..
+
+935-3736: ham	It‘s £6 to get in, is that ok?
+
+937-862: ham	Your brother is a genius
+
+945-5104: spam	This msg is for your mobile content order It has been resent as previous attempt failed due to network error Queries to customersqueries@netvision.uk.com
+
+949-1191: ham	We're done...
+
+955-144: ham	I know you are. Can you pls open the back?
+
+960-4498: ham	Ok
+
+966-1136: ham	K do I need a login or anything
+
+967-1916: ham	Its not that time of the month nor mid of the time?
+
+969-3833: ham	Ok.
+
+986-1273: ham	Ok...
+
+990-3051: ham	Ok
+
+993-4677: ham	Ü ready then call me...
+
+994-2535: ham	Ok enjoy . R u there in home.
+
+1004-4153: ham	What's nannys address?
+
+1005-1638: spam	0A$NETWORKS allow companies to bill for SMS, so they are responsible for their "suppliers", just as a shop has to give a guarantee on what they sell. B. G.
+
+1007-2537: ham	You do what all you like
+
+1008-2241: ham	K I'll call you when I'm close
+
+1019-2899: ham	If you r @ home then come down within 5 min
+
+1031-627: ham	How many licks does it take to get to the center of a tootsie pop?
+
+1034-1703: ham	I have lost 10 kilos as of today!
+
+1036-1269: spam	Can U get 2 phone NOW? I wanna chat 2 set up meet Call me NOW on 09096102316 U can cum here 2moro Luv JANE xx Calls£1/minmoremobsEMSPOBox45PO139WA
+
+1040-3425: spam	Am new 2 club & dont fink we met yet Will B gr8 2 C U Please leave msg 2day wiv ur area 09099726553 reply promised CARLIE x Calls£1/minMobsmore LKPOBOX177HP51FL
+
+1063-156: ham	Aaooooright are you at work?
+
+1075-2777: ham	Send me your id and password
+
+1091-3781: ham	Then ur physics get a-?
+
+1092-4283: ham	U can call now...
+
+1097-788: spam	Ever thought about living a good life with a perfect partner? Just txt back NAME and AGE to join the mobile community. (100p/SMS)
+
+1103-5021: ham	It's cool, we can last a little while. Getting more any time soon?
+
+1122-4824: ham	:-) :-)
+
+1136-4396: ham	Only just got this message, not ignoring you. Yes, i was. Shopping that is
+
+1139-3606: ham	Jordan got voted out last nite!
+
+1142-751: spam	Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?
+
+1145-1165: ham	Well. Im computerless. Time to make some oreo truffles
+
+1149-396: ham	From here after The performance award is calculated every two month.not for current one month period..
+
+1159-1908: ham	ELLO BABE U OK?
+
+1160-4910: ham	Will do. Have a good day
+
+1167-1539: ham	Midnight at the earliest
+
+1177-3877: ham	did u get that message
+
+1191-1593: ham	Will it help if we propose going back again tomorrow
+
+1224-4506: spam	Mobile Club: Choose any of the top quality items for your mobile. 7cfca1a
+
+1237-3252: ham	I‘ll leave around four, ok?
+
+1253-1422: ham	Do you work all this week ?
+
+1264-4894: ham	Send me the new number
+
+1281-2332: ham	At home by the way
+
+1291-613: ham	I have many dependents
+
+1297-5082: ham	Yeah, give me a call if you've got a minute
+
+1300-3503: ham	I will come to ur home now
+
+1302-502: ham	When can ü come out?
+
+1304-2045: ham	I can send you a pic if you like :)
+
+1306-4050: ham	Yeah that's the impression I got
+
+1308-4357: ham	Great. So should i send you my account number.
+
+1329-2655: ham	Its sarcasm.. .nt scarcasim
+
+1335-1663: spam	Hi if ur lookin 4 saucy daytime fun wiv busty married woman Am free all next week Chat now 2 sort time 09099726429 JANINExx Calls£1/minMobsmoreLKPOBOX177HP51FL
+
+1346-4663: ham	Ladies first and genus second k .
+
+1356-4475: spam	Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min
+
+1358-4025: ham	Wat time ü wan today?
+
+1387-3030: ham	What is your record for one night? :)
+
+1394-3161: ham	How much did ur hdd casing cost.
+
+1395-4914: spam	Goal! Arsenal 4 (Henry, 7 v Liverpool 2 Henry scores with a simple shot from 6 yards from a pass by Bergkamp to give Arsenal a 2 goal margin after 78 mins.
+
+1401-1227: spam	Reply with your name and address and YOU WILL RECEIVE BY POST a weeks completely free accommodation at various global locations www.phb1.com ph:08700435505150p
+
+1402-1831: ham	That's the way you should stay oh.
+
+1413-2155: ham	Oh god i am happy to see your message after 3 days
+
+1427-5292: ham	Dear where you. Call me
+
+1445-1555: ham	Yeah we do totes. When u wanna?
+
+1446-5521: ham	Can you pls send me that company name. In saibaba colany
+
+1475-3783: ham	How r ü going to send it to me?
+
+1483-3006: ham	Ew are you one of them?
+
+1494-1995: ham	Have you been practising your curtsey?
+
+1503-1515: ham	K:)all the best:)congrats...
+
+1528-3414: ham	Where do you need to go to get it?
+
+1540-2621: ham	How come?
+
+1543-2097: ham	I'm done...
+
+1544-561: ham	Hi msg me:)i'm in office..
+
+1545-4775: ham	U repeat e instructions again. Wat's e road name of ur house?
+
+1570-153: ham	Ok... Ur typical reply...
+
+1596-5458: spam	"For the most sparkling shopping breaks from 45 per person; call 0121 2025050 or visit www.shortbreaks.org.uk"
+
+1617-2873: ham	See you there! 
+
+1637-2769: ham	I am on the way to ur home
+
+1640-2073: ham	That is wondarfull song
+
+1649-2323: ham	Should I be stalking u?
+
+1650-232: ham	Dear we are going to our rubber place
+
+1660-534: ham	I'll be late...
+
+1661-5398: ham	As in i want custom officer discount oh.
+
+Saved model: saved_models/naive_bayes.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

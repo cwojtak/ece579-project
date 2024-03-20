@@ -1,0 +1,130 @@
+Mapped labels: spam->1, ham->0.
+Vectorized data with binary BoW.
+
+Split data.
+
+Performing a grid hyperparameter search with Stratified K-Fold cross validation
+Best parameters found: {'class_weight': None, 'max_depth': 100, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
+
+Model performance: TRAIN
+----------------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+AUROC: 1.0000
+
+Model performance: TEST
+----------------------
+Accuracy: 0.9707
+Precision: 0.9070
+Recall: 0.8705
+F1-score: 0.8884
+AUROC: 0.9284
+
+Misclassified texts:
+92-1701: ham	Please ask mummy to call father
+
+102-2159: ham	I think you should go the honesty road. Call the bank tomorrow. Its the tough decisions that make us great people.
+
+103-3954: spam	Refused a loan? Secured or Unsecured? Can't get credit? Call free now 0800 195 6669 or text back 'help' & we will!
+
+128-1940: spam	More people are dogging in your area now. Call 09090204448 and join like minded guys. Why not arrange 1 yourself. There's 1 this evening. A£1.50 minAPN LS278BB
+
+161-3530: spam	Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!
+
+208-5379: spam	The current leading bid is 151. To pause this auction send OUT. Customer Care: 08718726270
+
+243-1274: spam	network operator. The service is free. For T & C's visit 80488.biz
+
+252-2823: spam	ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.
+
+274-3141: spam	sexy sexy cum and text me im wet and warm and ready for some porn! u up for some fun? THIS MSG IS FREE RECD MSGS 150P INC VAT 2 CANCEL TEXT STOP
+
+382-1613: spam	RT-KIng Pro Video Club>> Need help? info@ringtoneking.co.uk or call 08701237397 You must be 16+ Club credits redeemable at www.ringtoneking.co.uk! Enjoy!
+
+444-4693: ham	By march ending, i should be ready. But will call you for sure. The problem is that my capital never complete. How far with you. How's work and the ladies
+
+463-4616: spam	Sunshine Quiz! Win a super Sony DVD recorder if you canname the capital of Australia? Text MQUIZ to 82277. B
+
+464-4765: ham	Hi.:)technical support.providing assistance to us customer through call and email:)
+
+472-948: ham	Hey i booked the kb on sat already... what other lessons are we going for ah? Keep your sat night free we need to meet and confirm our lodging 
+
+516-3360: spam	Sorry I missed your call let's talk when you have the time. I'm on 07090201529
+
+517-5568: spam	REMINDER FROM O2: To get 2.50 pounds free call credit and details of great offers pls reply 2 this text with your valid name, house no and postcode
+
+553-2121: ham	Argh my 3g is spotty, anyway the only thing I remember from the research we did was that province and sterling were the only problem-free places we looked at
+
+565-1430: spam	For sale - arsenal dartboard. Good condition but no doubles or trebles!
+
+573-812: ham	So there's a ring that comes with the guys costumes. It's there so they can gift their future yowifes. Hint hint
+
+628-1458: spam	CLAIRE here am havin borin time & am now alone U wanna cum over 2nite? Chat now 09099725823 hope 2 C U Luv CLAIRE xx Calls£1/minmoremobsEMSPOBox45PO139WA
+
+661-1154: spam	1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(£1.50p. m)
+
+694-2192: ham	Thankyou so much for the call. I appreciate your care.
+
+700-4574: spam	"URGENT! This is the 2nd attempt to contact U!U have WON £1000CALL 09071512432 b4 300603t&csBCM4235WC1N3XX.callcost150ppmmobilesvary. max£7. 50"
+
+726-3302: spam	RCT' THNQ Adrian for U text. Rgds Vatian
+
+727-1895: spam	FreeMsg Hey U, i just got 1 of these video/pic fones, reply WILD to this txt & ill send U my pics, hurry up Im so bored at work xxx (18 150p/rcvd STOP2stop)
+
+735-1497: ham	I'm always on yahoo messenger now. Just send the message to me and i.ll get it you may have to send it in the mobile mode sha but i.ll get it. And will reply.
+
+771-4768: spam	Your unique user ID is 1172. For removal send STOP to 87239 customer services 08708034412
+
+824-856: spam	Talk sexy!! Make new friends or fall in love in the worlds most discreet text dating service. Just text VIP to 83110 and see who you could meet.
+
+840-2434: ham	Indians r poor but India is not a poor country. Says one of the swiss bank directors. He says that " &lt;#&gt;  lac crore" of Indian money is deposited in swiss banks which can be used for 'taxless' budget for  &lt;#&gt;  yrs. Can give  &lt;#&gt;  crore jobs to all Indians. From any village to Delhi 4 lane roads. Forever free power suply to more than  &lt;#&gt;  social projects. Every citizen can get monthly  &lt;#&gt; /- for  &lt;#&gt;  yrs. No need of World Bank &amp; IMF loan. Think how our money is blocked by rich politicians. We have full rights against corrupt politicians. Itna forward karo ki pura INDIA padhe.g.m."
+
+885-2247: spam	Hi ya babe x u 4goten bout me?' scammers getting smart..Though this is a regular vodafone no, if you respond you get further prem rate msg/subscription. Other nos used also. Beware!
+
+927-615: ham	I called and said all to him:)then he have to choose this future.
+
+1005-1638: spam	0A$NETWORKS allow companies to bill for SMS, so they are responsible for their "suppliers", just as a shop has to give a guarantee on what they sell. B. G.
+
+1036-1269: spam	Can U get 2 phone NOW? I wanna chat 2 set up meet Call me NOW on 09096102316 U can cum here 2moro Luv JANE xx Calls£1/minmoremobsEMSPOBox45PO139WA
+
+1040-3425: spam	Am new 2 club & dont fink we met yet Will B gr8 2 C U Please leave msg 2day wiv ur area 09099726553 reply promised CARLIE x Calls£1/minMobsmore LKPOBOX177HP51FL
+
+1087-5539: spam	Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX
+
+1134-5338: ham	Sounds better than my evening im just doing my costume. Im not sure what time i finish tomorrow but i will txt you at the end.
+
+1142-751: spam	Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?
+
+1144-2820: ham	Don't forget who owns you and who's private property you are ... And be my good boy always .. *passionate kiss*
+
+1181-871: ham	Well am officially in a philosophical hole, so if u wanna call am at home ready to be saved!
+
+1260-3148: ham	Oh thats late! Well have a good night and i will give u a call tomorrow. Iam now going to go to sleep night night
+
+1262-3460: spam	Not heard from U4 a while. Call me now am here all night with just my knickers on. Make me beg for it like U did last time 01223585236 XX Luv Nikiyu4.net
+
+1335-1663: spam	Hi if ur lookin 4 saucy daytime fun wiv busty married woman Am free all next week Chat now 2 sort time 09099726429 JANINExx Calls£1/minMobsmoreLKPOBOX177HP51FL
+
+1351-1364: ham	Yetunde, i'm sorry but moji and i seem too busy to be able to go shopping. Can you just please find some other way to get what you wanted us to get. Please forgive me. You can reply free via yahoo messenger.
+
+1356-4475: spam	Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min
+
+1395-4914: spam	Goal! Arsenal 4 (Henry, 7 v Liverpool 2 Henry scores with a simple shot from 6 yards from a pass by Bergkamp to give Arsenal a 2 goal margin after 78 mins.
+
+1417-2876: ham	Idk. You keep saying that you're not, but since he moved, we keep butting heads over freedom vs. responsibility. And i'm tired. I have so much other shit to deal with that i'm barely keeping myself together once this gets added to it.
+
+1455-4969: ham	Future is not what we planned for tomorrow.....! it is the result of what we do today...! Do the best in present... enjoy the future.
+
+1467-397: ham	Was actually sleeping and still might when u call back. So a text is gr8. You rock sis. Will send u a text wen i wake.
+
+1489-5081: ham	"Keep ur problems in ur heart, b'coz nobody will fight for u. Only u &amp; u have to fight for ur self &amp; win the battle. -VIVEKANAND- G 9t.. SD..
+
+Saved model: decision_tree.joblib
+
+Removing data/processed/*
+Removing data/split/train/*
+Removing data/split/test/*
+Processed and split data files removed.
+

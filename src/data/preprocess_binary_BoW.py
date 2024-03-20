@@ -21,7 +21,7 @@ if __name__ == "__main__":
     vectorized_data = vectorize_messages(data['message'])
 
     # Combine labels with vectorized messages
-    preprocessed_data = pd.concat([data['label'], vectorized_data], axis=1)
+    preprocessed_data = pd.concat([data["org_indices"], data['label'], vectorized_data], axis=1)
 
     # Save preprocessed data
     preprocessed_data.to_csv(output_path, index=False)

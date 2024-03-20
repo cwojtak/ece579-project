@@ -1,6 +1,7 @@
 # Using reference https://scikit-learn.org/stable/modules/tree.html
 
 from sklearn import tree
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from joblib import dump
 import evaluate_model
 import pandas as pd
@@ -11,10 +12,39 @@ def load_training_data():
     train_dir = "data/split/train/"
     X_train = pd.read_csv(train_dir + "X_train.csv")
     y_train = pd.read_csv(train_dir + "y_train.csv").squeeze()
-    return X_train, y_train
+    org_indices_train = pd.read_csv(train_dir + "org_indices_train.csv").squeeze()
+    return X_train, y_train, org_indices_train
 
 def train_decision_tree(X_train, y_train):
     """Train a decision tree using the provided training data."""
+
+    # For some reason, hyperparameter search caused worse results...
+    """
+    # Hyperparameter Search Space
+    param_grid = {
+        'class_weight': ['balanced', None],
+        'max_features': ['sqrt', 'log2', None],
+        'max_depth': [50, 75, 100, None],
+        'min_samples_split': [2, 3, 4],
+        'min_samples_leaf': [1, 2]
+    }
+
+    # Initialize the Decision Tree model
+    model = tree.DecisionTreeClassifier()
+
+    # Using stratified K fold sampling to address class imbalances as base SVM had low recall
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+
+    # Performing a grid hyperparameter search because grid search takes a long time
+    print("Performing a grid hyperparameter search with Stratified K-Fold cross validation")
+
+    grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=skf, n_jobs=-1)
+    grid_search.fit(X_train, y_train)
+    print(f"Best parameters found: {grid_search.best_params_}\n")
+
+    return grid_search.best_estimator_
+    """
+
     model = tree.DecisionTreeClassifier()
     model.fit(X_train, y_train)
     return model
@@ -26,17 +56,17 @@ def save_model(model, model_path):
 
 if __name__ == "__main__":
     # Load the training data
-    X_train, y_train = load_training_data()
+    X_train, y_train, org_indices_train = load_training_data()
 
     # Train the logistic regression model
     model = train_decision_tree(X_train, y_train)
 
     # Evaluate the model on training data
-    evaluate_model.evaluate(model, X_train, y_train, "TRAIN")
+    evaluate_model.evaluate(model, X_train, y_train, "TRAIN", org_indices_train)
 
     # Evaluate the model on testing data
-    X_test, y_test = evaluate_model.load_test_data()
-    evaluate_model.evaluate(model, X_test, y_test, "TEST")
+    X_test, y_test, org_indices_test = evaluate_model.load_test_data()
+    evaluate_model.evaluate(model, X_test, y_test, "TEST", org_indices_test)
 
     # Save the trained model
     save_model(model, "saved_models/decision_tree.joblib")
