@@ -1,6 +1,7 @@
 # Using reference https://scikit-learn.org/stable/modules/tree.html
 
 from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.model_selection import StratifiedKFold, GridSearchCV
 from joblib import dump
 import evaluate_model
 import pandas as pd
@@ -15,10 +16,28 @@ def load_training_data():
     return X_train, y_train, org_indices_train
 
 def train_grad_boosted_tree(X_train, y_train):
-    """Train a decision tree using the provided training data."""
+    """Train a gradient-boosted decision tree using the provided training data."""
+    # Hyperparameter Search Space
+    param_grid = {
+        'loss': ['log_loss', 'exponential'],
+        'learning_rate': [0.1, 0.25, 0.5],
+        'n_estimators': [100, 500, 1000]
+    }
+
+    # Initialize the Gradient Boosting Classifier
     model = GradientBoostingClassifier(verbose=1)
-    model.fit(X_train, y_train)
-    return model
+
+    # Using stratified K fold sampling to address class imbalances as base SVM had low recall
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+
+    # Performing a grid hyperparameter search because grid search takes a long time
+    print("Performing a grid hyperparameter search with Stratified K-Fold cross validation")
+
+    grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=skf, n_jobs=-1)
+    grid_search.fit(X_train, y_train)
+    print(f"Best parameters found: {grid_search.best_params_}\n")
+
+    return grid_search.best_estimator_
 
 def save_model(model, model_path):
     """Save the trained model to the specified path using joblib."""
