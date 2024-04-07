@@ -2,7 +2,6 @@ Mapped labels: spam->1, ham->0.
 Replaced long strings of numbers and dashes with a unique word.
 Replaced 5 digit numbers with a unique word.
 Replaced monetary amounts with a unique word.
-Removed stop words: a
 Vectorized data with binary BoW.
 
 Split data.

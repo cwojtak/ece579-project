@@ -11,6 +11,25 @@ Recall: 0.9828
 F1-score: 0.9913
 AUROC: 0.9998
 
+Misclassified texts:
+145-955: spam	Filthy stories and GIRLS waiting for your
+
+260-2965: spam	Do you ever notice that when you're driving, anyone going slower than you is an idiot and everyone driving faster than you is a maniac?
+
+337-4514: spam	Money i have won wining number 946 wot do i do next
+
+896-3981: spam	ringtoneking 84484
+
+1298-68: spam	Did you hear about the new "Divorce Barbie"? It comes with all of Ken's stuff!
+
+1394-415: spam	100 dating service cal;l 09064012103 box334sk38ch
+
+1793-3742: spam	2/2 146tf150p
+
+1975-2269: spam	88066 FROM 88066 LOST 3POUND HELP
+
+2814-713: spam	08714712388 between 10am-7pm Cost 10p
+
 Model performance: TEST
 ----------------------
 Accuracy: 0.9833
@@ -18,6 +37,63 @@ Precision: 0.9949
 Recall: 0.8795
 F1-score: 0.9336
 AUROC: 0.9929
+
+Misclassified texts:
+128-1940: spam	More people are dogging in your area now. Call 09090204448 and join like minded guys. Why not arrange 1 yourself. There's 1 this evening. A£1.50 minAPN LS278BB
+
+208-5379: spam	The current leading bid is 151. To pause this auction send OUT. Customer Care: 08718726270
+
+243-1274: spam	network operator. The service is free. For T & C's visit 80488.biz
+
+252-2823: spam	ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.
+
+341-2352: spam	Download as many ringtones as u like no restrictions, 1000s 2 choose. U can even send 2 yr buddys. Txt Sir to 80082 £3 
+
+384-2804: spam	FreeMsg>FAV XMAS TONES!Reply REAL
+
+402-334: ham	Any chance you might have had with me evaporated as soon as you violated my privacy by stealing my phone number from your employer's paperwork. Not cool at all. Please do not contact me again or I will report you to your supervisor.
+
+508-3750: spam	Dear Voucher Holder 2 claim your 1st class airport lounge passes when using Your holiday voucher call 08704439680. When booking quote 1st class x 2
+
+516-3360: spam	Sorry I missed your call let's talk when you have the time. I'm on 07090201529
+
+565-1430: spam	For sale - arsenal dartboard. Good condition but no doubles or trebles!
+
+594-4676: spam	Hi babe its Chloe, how r u? I was smashed on saturday night, it was great! How was your weekend? U been missing me? SP visionsms.com Text stop to stop 150p/text
+
+628-1458: spam	CLAIRE here am havin borin time & am now alone U wanna cum over 2nite? Chat now 09099725823 hope 2 C U Luv CLAIRE xx Calls£1/minmoremobsEMSPOBox45PO139WA
+
+642-2699: spam	FROM 88066 LOST £12 HELP
+
+661-1154: spam	1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(£1.50p. m)
+
+726-3302: spam	RCT' THNQ Adrian for U text. Rgds Vatian
+
+885-2247: spam	Hi ya babe x u 4goten bout me?' scammers getting smart..Though this is a regular vodafone no, if you respond you get further prem rate msg/subscription. Other nos used also. Beware!
+
+1005-1638: spam	0A$NETWORKS allow companies to bill for SMS, so they are responsible for their "suppliers", just as a shop has to give a guarantee on what they sell. B. G.
+
+1036-1269: spam	Can U get 2 phone NOW? I wanna chat 2 set up meet Call me NOW on 09096102316 U can cum here 2moro Luv JANE xx Calls£1/minmoremobsEMSPOBox45PO139WA
+
+1087-5539: spam	Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX
+
+1142-751: spam	Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?
+
+1224-4506: spam	Mobile Club: Choose any of the top quality items for your mobile. 7cfca1a
+
+1243-1460: spam	Bought one ringtone and now getting texts costing 3 pound offering more tones etc
+
+1262-3460: spam	Not heard from U4 a while. Call me now am here all night with just my knickers on. Make me beg for it like U did last time 01223585236 XX Luv Nikiyu4.net
+
+1356-4475: spam	Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min
+
+1395-4914: spam	Goal! Arsenal 4 (Henry, 7 v Liverpool 2 Henry scores with a simple shot from 6 yards from a pass by Bergkamp to give Arsenal a 2 goal margin after 78 mins.
+
+1425-5: spam	FreeMsg Hey there darling it's been 3 week's now and no word back! I'd like some fun you up for it still? Tb ok! XxX std chgs to send, £1.50 to rcv
+
+1567-4527: spam	I want some cock! My hubby's away, I need a real man 2 satisfy me. Txt WIFE to 89938 for no strings action. (Txt STOP 2 end, txt rec £1.50ea. OTBox 731 LA1 7WS. )
+
+1627-4295: spam	Kit Strip - you have been billed 150p. Netcollex Ltd. PO Box 1013 IG11 OJA
 
 Saved model: logistic_regression_baseline.joblib
 
