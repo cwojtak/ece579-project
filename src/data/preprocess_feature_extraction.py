@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from load_data import load_and_label_data
 import re
+from joblib import dump
 
 
 def identify_features(message):
@@ -27,7 +28,7 @@ def vectorize_messages(messages):
     vectorizer = CountVectorizer(binary=True)  # Removing stopwords doesn't seem very helpful
     features = vectorizer.fit_transform(messages)
     print("Vectorized data with binary BoW.")
-    return pd.DataFrame(features.toarray(), columns=vectorizer.get_feature_names_out())
+    return vectorizer, pd.DataFrame(features.toarray(), columns=vectorizer.get_feature_names_out())
 
 
 if __name__ == "__main__":
@@ -37,10 +38,13 @@ if __name__ == "__main__":
     data = load_and_label_data(data_path)
 
     # Vectorize message (BoW)
-    vectorized_data = vectorize_messages(data['message'])
+    vectorizer, vectorized_data = vectorize_messages(data['message'])
 
     # Combine labels with vectorized messages
     preprocessed_data = pd.concat([data["org_indices"], data['label'], vectorized_data], axis=1)
 
     # Save preprocessed data
     preprocessed_data.to_csv(output_path, index=False)
+
+    # Save vectorizer
+    dump(vectorizer, 'data/vectorizers/fe_vectorizer.joblib')
