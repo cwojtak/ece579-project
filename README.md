@@ -1,8 +1,14 @@
-Flow of operations for running an experiment:
+# SMS Spam Detection
+
+## Requirements
+This project requires Python (tested on 3.8.10) and the requirements in requirements.txt to be installed.       
+They can be installed with ```pip install -r requirements.txt``` in the project root directory.
+
+## Running an Experiment
 
 *NOTE: All example commands should be executed from the root project directory (i.e. /ece579-project)  
 *NOTE: Some pre-made configurations are available in ./bin. Running any of the *_default_run.sh scripts in this folder
-will automatically execute steps 1-4 below but will not clean up like in step 6.
+will automatically execute steps 1-6 below.
 
 1. Data preprocessing
     - Create/Use a preprocessing script from 'src/data'. This may include processes like tokenization, vectorization, text normalization, etc.
@@ -32,9 +38,9 @@ will automatically execute steps 1-4 below but will not clean up like in step 6.
 
 5. Document findings
     - Document the experiement using a pdf or similar, and save to 'docs'.
+    - This should be done automatically by the automated shell scripts but should be done if experimentation is being
+performed manually.
     - Ensure all steps are documented for reproducibility.
-
-    - e.g. Oddly enough, the baseline has accuracy: 0.9835, which is unexpected. There might be an issue, idk yet.
 
 6. Clean up the workspace
     - Run 'bin/cleanup.sh' or manually delete files in 'data/processed', 'data/split/train', and 'data/split/test'.
@@ -43,4 +49,4 @@ will automatically execute steps 1-4 below but will not clean up like in step 6.
 
     - e.g. bin/cleanup.sh
 
-7. Push to git
+7. Push to Git
